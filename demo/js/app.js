@@ -2,11 +2,11 @@
 
 angular.module('myApp', ['ngRoute', 'myApp.controllers', 'ui.ladda']).
 config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {
-        templateUrl: 'partials/partial1.html',
-        controller: 'MyCtrl1'
+    $routeProvider.when('/main', {
+        templateUrl: 'partials/main.html',
+        controller: 'main'
     });
     $routeProvider.otherwise({
-        redirectTo: '/view1'
+        redirectTo: '/main'
     });
 }]);

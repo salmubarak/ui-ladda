@@ -1,0 +1,80 @@
+<div class="bs-docs-header" id="content">
+    <div class="container">
+        <h1>UI.Ladda</h1>
+        <p>AngularJS directive for Bootstrap 3 Ladda UI.</p>
+        <div id="carbonads-container">
+            <div class="carbonad">
+                <div id="azcarbon"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container bs-docs-container">
+    <div class="row">
+        <div class="col-md-9" role="main">
+            <div class="bs-docs-section">
+                <h1 id="overview" class="page-header">Overview</h1>
+                <p>Bootstrap 3 Laddui was made by @msurguy. The original UI concept is by @hakimel which merges loading indicators into the action that invoked them. It is primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing.</p>
+                <p>See the original website for more information: <a href="http://msurguy.github.io/ladda-bootstrap/">http://msurguy.github.io/ladda-bootstrap/</a></p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="bs-docs-sidebar hidden-print" role="complementary">
+                <ul class="nav bs-docs-sidenav">
+                    <li>
+                        <a href="#overview">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#usage">Grid system</a>
+                    </li>
+                    <li>
+                        <a href="#example">Example</a>
+                    </li>
+                </ul>
+                <a class="back-to-top" href="#top">
+                  Back to top
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9" role="main">
+            <div class="bs-docs-section">
+                <h1 id="usage" class="page-header">Usage</h1>
+                <p>Load the ui-ladda.js script in your application:</p>
+                <div class="html-editor" style="width: 700px; height: 50px">&lt;script src=&quot;ui-ladda.js&quot;&gt;&lt;/script&gt;</div>
+                <br />
+                <p>Add the ui-ladda module as a dependency to your application module:</p>
+                <div class="javascript-editor" style="width: 700px; height: 50px">angular.module(&#39;myApp&#39;, [&#39;ui.ladda&#39;]);</div>
+                <br />
+                <p>Apply the directive to your buttons:</p>
+                <div class="html-editor" style="width: 700px; height: 100px">&lt;button class=&quot;btn btn-primary ladda-button&quot; data-ui-ladda=&quot;progress&quot; data-style=&quot;expand-right&quot;&gt;
+    &lt;span class=&quot;ladda-label&quot;&gt;expand-right&lt;/span&gt;
+&lt;/button&gt;</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9" role="main">
+            <div class="bs-docs-section">
+                <h1 id="example" class="page-header">Example</h1>
+                <div>
+                    <button class="btn btn-primary ladda-button" ui-ladda="progress" data-style="expand-right"><span class="ladda-label">expand-right</span></button>
+                </div>
+                <div style="padding-top: 20px">
+                    <div class="btn-group">
+                        <button class="btn btn-default ladda-button" data-ng-click="progress = true">progress = true</button>
+                        <button class="btn btn-default ladda-button" data-ng-click="progress = false">progress = false</button>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-default ladda-button" data-ng-click="progress = 0">progress = 0</button>
+                        <button class="btn btn-default ladda-button" data-ng-click="progress = 0.5">progress = 0.5</button>
+                        <button class="btn btn-default ladda-button" data-ng-click="progress = 1">progress = 1</button>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
