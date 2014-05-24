@@ -1,61 +1,41 @@
 <div class="bs-docs-header" id="content">
+    <a href="https://github.com/rmcdaniel/ui-ladda"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
     <div class="container">
         <h1>UI.Ladda</h1>
         <p>AngularJS directive for Bootstrap 3 Ladda UI.</p>
-        <div id="carbonads-container">
-            <div class="carbonad">
-                <div id="azcarbon"></div>
-            </div>
-        </div>
     </div>
 </div>
 <div class="container bs-docs-container">
     <div class="row">
-        <div class="col-md-9" role="main">
+        <div class="col-md-12" role="main">
             <div class="bs-docs-section">
                 <h1 id="overview" class="page-header">Overview</h1>
-                <p>Bootstrap 3 Laddui was made by @msurguy. The original UI concept is by @hakimel which merges loading indicators into the action that invoked them. It is primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing.</p>
-                <p>See the original website for more information: <a href="http://msurguy.github.io/ladda-bootstrap/">http://msurguy.github.io/ladda-bootstrap/</a></p>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="bs-docs-sidebar hidden-print" role="complementary">
-                <ul class="nav bs-docs-sidenav">
-                    <li>
-                        <a href="#overview">Overview</a>
-                    </li>
-                    <li>
-                        <a href="#usage">Usage</a>
-                    </li>
-                    <li>
-                        <a href="#example">Example</a>
-                    </li>
-                </ul>
-                <a class="back-to-top" href="#top">
-                  Back to top
-                </a>
+                <p>Bootstrap 3 Ladda UI is made by @msurguy. The original UI concept is by @hakimel which are buttons with integrated loading and progress indicators. It is primarily intended for use with forms where it gives users immediate feedback upon submit rather than leaving them wondering while the browser does its thing.</p>
+                <p>Original UI concept: <a href="http://lab.hakim.se/ladda/">http://lab.hakim.se/ladda/</a></p>
+                <p>Bootstrap 3 Ladda UI: <a href="http://msurguy.github.io/ladda-bootstrap/">http://msurguy.github.io/ladda-bootstrap/</a></p>
+                <p>Earlier AngularJS Ladda Wrapper: <a href="https://gist.github.com/ProLoser/6136208">https://gist.github.com/ProLoser/6136208</a></p>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-9" role="main">
+        <div class="col-md-12" role="main">
             <div class="bs-docs-section">
                 <h1 id="usage" class="page-header">Usage</h1>
                 <p>Load the ui-ladda.js script in your application:</p>
-                <div class="html-editor" style="width: 700px; height: 50px">&lt;script src=&quot;ui-ladda.js&quot;&gt;&lt;/script&gt;</div>
+                <div class="html-editor" style="width: 100%; height: 50px">&lt;script src=&quot;ui-ladda.js&quot;&gt;&lt;/script&gt;</div>
                 <br />
                 <p>Add the ui-ladda module as a dependency to your application module:</p>
-                <div class="javascript-editor" style="width: 700px; height: 50px">angular.module(&#39;myApp&#39;, [&#39;ui.ladda&#39;]);</div>
+                <div class="javascript-editor" style="width: 100%; height: 50px">angular.module(&#39;myApp&#39;, [&#39;ui.ladda&#39;]);</div>
                 <br />
                 <p>Apply the directive to your buttons:</p>
-                <div class="html-editor" style="width: 700px; height: 100px">&lt;button class=&quot;btn btn-primary ladda-button&quot; data-ui-ladda=&quot;progress&quot; data-style=&quot;expand-right&quot;&gt;
+                <div class="html-editor" style="width: 100%; height: 100px">&lt;button class=&quot;btn btn-primary ladda-button&quot; data-ui-ladda=&quot;progress&quot; data-style=&quot;expand-right&quot;&gt;
     &lt;span class=&quot;ladda-label&quot;&gt;expand-right&lt;/span&gt;
 &lt;/button&gt;</div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-9" role="main">
+        <div class="col-md-12" role="main">
             <div class="bs-docs-section">
                 <h1 id="example" class="page-header">Example</h1>
                 <div>
