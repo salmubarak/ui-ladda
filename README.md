@@ -1,13 +1,5 @@
 # UI.Ladda Directive
 
-This is an AngularJS directive for Bootstrap 3 Ladda UI (http://msurguy.github.io/ladda-bootstrap/).
+This is an AngularJS directive for Bootstrap 3 Ladda UI.
 
-## Requirements
-
-- JQuery
-- Bootstrap 3
-- AngularJS
-
-## Usage
-
-## Examples
+See the project page for more information: http://rmcdaniel.github.io/ui-ladda
