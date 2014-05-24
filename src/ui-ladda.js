@@ -15,11 +15,6 @@ angular.module('ui.ladda', []).directive('uiLadda', ['$timeout', function($timeo
                             ladda.setProgress(newVal);
                         }
                     }
-                    else if (newVal == 1) {
-                        if (ladda.isLoading()) {
-                            ladda.stop();
-                        }
-                    }
                     else {
                         if (ladda.isLoading()) {
                             ladda.stop();
@@ -28,10 +23,14 @@ angular.module('ui.ladda', []).directive('uiLadda', ['$timeout', function($timeo
                 }
                 else {
                     if (newVal) {
-                        ladda.start();
+                        if (!ladda.isLoading()) {
+                            ladda.start();
+                        }
                     }
                     else {
-                        ladda.stop();
+                        if (ladda.isLoading()) {
+                            ladda.stop();
+                        }
                     }
                 }
             }, true);
